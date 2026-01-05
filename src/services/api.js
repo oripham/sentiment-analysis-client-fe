@@ -33,7 +33,7 @@ api.interceptors.response.use(
         const refresh = localStorage.getItem("refresh_token");
         if (!refresh) throw new Error("No refresh token");
 
-        const res = await axios.post("http://localhost:8000/client/auth/refresh", {
+        const res = await axios.post("https://oripham-npl-ml-backend.hf.space/client/auth/refresh", {
           refresh_token: refresh,
         });
 
