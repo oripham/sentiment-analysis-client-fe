@@ -7,5 +7,4 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/sentiment-analysis-client-fe/',
 })
